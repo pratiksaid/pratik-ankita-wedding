@@ -1,15 +1,21 @@
-# Pratik & Ankita — Artful-style invitation
+GITHUB SETUP
 
-This is a recreation inspired by the public reference website:
-https://demo3artfulinvites.framer.website/
+1. Upload index.html, style.css and script.js to the repository root.
+2. Create an images folder.
+3. Upload your photos using these exact filenames:
 
-Details changed:
-- Pratik Weds Ankita
-- 12 December 2026
-- Pune
-- Temporary wedding images are used as placeholders.
+hero.jpg
+card1.jpg
+card2.jpg
+card3.jpg
+card4.jpg
+card5.jpg
+location.jpg
+rsvp.jpg
+gallery1.jpg
+gallery2.jpg
+gallery3.jpg
 
-TO REPLACE PHOTOS:
-Open index.html and search for each `https://...` image URL. Replace the URL with your own image URL, or change the `<img src>` values to local files such as `images/photo1.jpg`.
+4. Enable GitHub Pages from Settings > Pages > Deploy from branch > main > / (root).
 
-The layout contains animated loading, scroll reveals, parallax, stacked cards, horizontal gallery movement, and animated footer text.
+The website will automatically load the photos from the GitHub images folder.
