@@ -1,0 +1,4 @@
+const loader=document.getElementById("loader");window.addEventListener("load",()=>setTimeout(()=>{loader.style.opacity="0";setTimeout(()=>loader.remove(),900)},500));
+const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>observer.observe(e));
+const progress=document.querySelector(".progress span");window.addEventListener("scroll",()=>{const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(h>0?scrollY/h*100:0)+"%";document.querySelectorAll(".parallax").forEach(e=>e.style.transform=`translateY(${scrollY*.10}px) scale(1.08)`)},{passive:true});
+const cards=document.querySelectorAll(".photo-card");window.addEventListener("scroll",()=>{cards.forEach((c,i)=>{const r=c.getBoundingClientRect();const d=(innerHeight/2-r.top)/innerHeight;c.style.setProperty("--tilt",`${Math.max(-8,Math.min(8,d*5))}deg`)})},{passive:true});
